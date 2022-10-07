@@ -1,0 +1,21 @@
+---
+title: "DDP Week 2 Project"
+author: "abhi-ab"
+date: '07 October 2022'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaflet)
+map <- leaflet() %>% addTiles()
+
+```
+
+
+Leaflet Map
+```{r}
+map %>%
+  addTiles() %>%
+  addPopups(lat=48.8584, lng=2.2945, 'Eiffel Tower')
+```
